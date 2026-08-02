@@ -9,6 +9,7 @@ import { BoardView } from './components/BoardView';
 import { CampaignView } from './components/CampaignView';
 import { OnboardingModal } from './components/OnboardingModal';
 import { RulesModal } from './components/RulesModal';
+import { InfoModal } from './components/InfoModal';
 import { CustomGameModal } from './components/CustomGameModal';
 import { Flag } from 'lucide-react';
 
@@ -95,6 +96,7 @@ export default function App() {
     return !localStorage.getItem('sapeur_onboarded');
   });
   const [isRulesOpen, setIsRulesOpen] = useState(false);
+  const [isInfoOpen, setIsInfoOpen] = useState(false);
   const [isCustomOpen, setIsCustomOpen] = useState(false);
 
   // Refs
@@ -701,6 +703,7 @@ export default function App() {
           setGameMode('free');
         }}
         onOpenRules={() => setIsRulesOpen(true)}
+        onOpenInfo={() => setIsInfoOpen(true)}
         onOpenCustom={() => setIsCustomOpen(true)}
         onReset={handleResetMatch}
         onSwitchMode={() => {
@@ -781,6 +784,11 @@ export default function App() {
       <RulesModal
         isOpen={isRulesOpen}
         onClose={() => setIsRulesOpen(false)}
+      />
+
+      <InfoModal
+        isOpen={isInfoOpen}
+        onClose={() => setIsInfoOpen(false)}
       />
 
       <CustomGameModal

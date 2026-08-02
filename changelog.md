@@ -3,6 +3,18 @@
 Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/), versionnage
 [SemVer](https://semver.org/lang/fr/).
 
+## [1.1.0] 2026-08-02
+
+### Ajouté
+- Modale « ℹ️ Infos » (bouton dans l'en-tête, `InfoModal.tsx`) expliquant la stack, les
+  graphismes, la musique, les interactions (chording, 5 armes), l'architecture et les
+  algorithmes notables (grille générée seulement au premier clic, zone 3×3 protégée).
+  Étape 15 du chantier de retrofit décrit dans `todo.md` racine du monorepo.
+
+### Vérifié
+- Build propre, modale testée à l'ouverture/fermeture (après avoir traversé l'overlay
+  d'onboarding), aucune erreur console, aucun débordement horizontal en 390×844.
+
 ## [1.0.0] 2026-07-31
 
 Première version intégrable à Hylst.Games, partie d'un export brut audité puis corrigé.

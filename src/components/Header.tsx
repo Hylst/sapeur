@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Difficulty, GameMode } from '../types/game';
 import { audio } from '../services/audio';
-import { Maximize2, Minimize2, Volume2, VolumeX, Music, BookOpen, Map, Sliders, RefreshCw, Sparkles } from 'lucide-react';
+import { Maximize2, Minimize2, Volume2, VolumeX, Music, BookOpen, Map, Sliders, RefreshCw, Sparkles, Info } from 'lucide-react';
 
 interface Props {
   gameMode: GameMode;
   difficulty: Difficulty;
   onSelectDifficulty: (diff: Difficulty) => void;
   onOpenRules: () => void;
+  onOpenInfo: () => void;
   onOpenCustom: () => void;
   onReset: () => void;
   onSwitchMode: () => void;
@@ -19,6 +20,7 @@ export const Header: React.FC<Props> = ({
   difficulty,
   onSelectDifficulty,
   onOpenRules,
+  onOpenInfo,
   onOpenCustom,
   onReset,
   onSwitchMode,
@@ -172,6 +174,16 @@ export const Header: React.FC<Props> = ({
           >
             <BookOpen className="h-4 w-4" />
             <span>Règles</span>
+          </button>
+
+          {/* Comment ce jeu a ete fait */}
+          <button
+            onClick={onOpenInfo}
+            title="Comment ce jeu a été fait"
+            className="flex items-center gap-1.5 rounded-xl bg-indigo-500/10 px-3 py-2 text-xs font-bold text-indigo-300 hover:bg-indigo-500/20 hover:text-white transition border border-indigo-500/20"
+          >
+            <Info className="h-4 w-4" />
+            <span>Infos</span>
           </button>
 
           {/* Fullscreen toggle */}
