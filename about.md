@@ -22,5 +22,5 @@ déminage — un terme réel, pas inventé, qui colle parfaitement au thème.
 
 ## Contact
 
-- Email : geoffroy.streit@gmail.com
+- Email : geoffroy.streit@ik.me
 - Plateforme : [games.hylst.fr](https://games.hylst.fr/)
