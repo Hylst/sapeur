@@ -218,7 +218,7 @@ export const CAMPAIGN_LEVELS: LevelConfig[] = [
   {
     id: 14,
     title: 'Niveau 14',
-    subtitle: 'Urgence Optimale',
+    subtitle: 'Urgence',
     rows: 16,
     cols: 24,
     mines: 75,
@@ -376,7 +376,7 @@ export const CAMPAIGN_LEVELS: LevelConfig[] = [
   {
     id: 24,
     title: 'Niveau 24',
-    subtitle: 'Victoire Ultime',
+    subtitle: 'Victoire finale',
     rows: 22,
     cols: 40,
     mines: 220,

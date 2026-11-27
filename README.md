@@ -1,6 +1,6 @@
 # Sapeur
 
-**24 missions de déminage, un arsenal tactique à débloquer.**
+**24 missions de déminage, un arsenal tactique.**
 
 Joue ici : [games.hylst.fr/sapeur/](https://games.hylst.fr/sapeur/)
 

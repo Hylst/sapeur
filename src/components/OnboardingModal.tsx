@@ -32,7 +32,7 @@ export const OnboardingModal: React.FC<Props> = ({ isOpen, onClose }) => {
             Bienvenue dans Sapeur
           </h2>
           <p className="mt-1 text-sm font-medium text-indigo-100 sm:text-base">
-            L'expérience tactique de déminage ultime, dotée d'armes technologiques et de bonus.
+            Une campagne de déminage tactique, dotée d'armes technologiques et de bonus.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export const OnboardingModal: React.FC<Props> = ({ isOpen, onClose }) => {
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               <div className="rounded-xl border border-slate-800 bg-slate-800/50 p-3">
                 <span className="font-bold text-indigo-300">Clic Gauche :</span>
-                <p className="mt-1 text-sm text-slate-400">Révéler une case. Le premier clic est toujours 100% sécurisé !</p>
+                <p className="mt-1 text-sm text-slate-400">Révéler une case. La première case révélée est protégée, ainsi que son voisinage 3x3.</p>
               </div>
               <div className="rounded-xl border border-slate-800 bg-slate-800/50 p-3">
                 <span className="font-bold text-pink-300">Clic Droit (ou Mode Drapeau) :</span>
